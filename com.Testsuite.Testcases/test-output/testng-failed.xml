@@ -1,18 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite thread-count="1" parallel="tests" name="Failed suite [Gmail Suite]">
-  <test parallel="tests" name="Flipkart(failed)">
+<suite parallel="none" name="Failed suite [Default suite]">
+  <test parallel="none" name="Default test(failed)">
     <classes>
       <class name="com.TestsuiteSelenium.Flipkart">
         <methods>
           <include name="login"/>
           <include name="searchAndSelectProduct"/>
-          <include name="quit"/>
           <include name="addAndRemoveFromCart"/>
           <include name="logout"/>
           <include name="init"/>
         </methods>
       </class> <!-- com.TestsuiteSelenium.Flipkart -->
+      <class name="com.TestsuiteSelinium1.SnapDeal">
+        <methods>
+          <include name="quit"/>
+          <include name="searchAndSelectProduct"/>
+          <include name="addAndRemoveFromCart"/>
+          <include name="login"/>
+          <include name="logout"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- com.TestsuiteSelinium1.SnapDeal -->
     </classes>
-  </test> <!-- Flipkart(failed) -->
-</suite> <!-- Failed suite [Gmail Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
